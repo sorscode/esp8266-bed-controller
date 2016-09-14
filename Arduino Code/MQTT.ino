@@ -4,7 +4,7 @@ void setupMQTT(){
 }
 
 boolean reconnect() {
-  if (client.connect("MarisaBedroom")) {
+  if (client.connect("#########")) { /// Name your MQTT Client, all need to be unique
     // Once connected, publish an announcement...
     client.publish("test/status", "Online");
     client.publish("test/status", ver);
