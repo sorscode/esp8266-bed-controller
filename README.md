@@ -13,17 +13,17 @@ There is three folders with all the code. Here is brief information for each:
 - Timers for the Outlets
 - Over the Air updating
   
-  Things you would need to update to make it work:
-    MQTT.ino
-     - update "if (client.connect("#########"))" Update the "#########" to a unique MQTT Client Name
-    OTA.ino
-      - update "fqdn.domain.com" to your server that will host your bin files
-    esp8266-bed-controller.ino
-      - char myhostname[] = "##########"; Update this line to a unique hostname, can be the same as MQTT Client Name
-      - const char* ssid = "##########"; Update this line to match your Wireless SSID
-      - const char* password = "##########"; Update this line to your Wireless SSID Password
-      - const char* mqtt_server = "##########"; Update this line to point to your FQDN MQTT Server
-      - const char* ver = "##########"; Update this line for version control, and for OTA to work right
+Things you would need to update to make it work:
+- MQTT.ino
+  - update "if (client.connect("#########"))" Update the "#########" to a unique MQTT Client Name
+- OTA.ino
+  - update "fqdn.domain.com" to your server that will host your bin files
+- esp8266-bed-controller.ino
+  - char myhostname[] = "##########"; Update this line to a unique hostname, can be the same as MQTT Client Name
+  - const char* ssid = "##########"; Update this line to match your Wireless SSID
+  - const char* password = "##########"; Update this line to your Wireless SSID Password
+  - const char* mqtt_server = "##########"; Update this line to point to your FQDN MQTT Server
+  - const char* ver = "##########"; Update this line for version control, and for OTA to work right
       
 ## Web Interface:
 All the code for the web interface to talk to the ESP8266
