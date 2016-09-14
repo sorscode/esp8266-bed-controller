@@ -35,7 +35,7 @@ All the code for the web interface to talk to the ESP8266
 - User Page (index.php)
 - Three simple toggle switchs
 - Turn Lamp (outlet1) on or off
-- This is also on a timer, and turns lamp off, after so long
+  - This is also on a timer, and will turn off automatically
 - Turn Star Lights on or off
   - This is also on a timer for the first three channels, and will turn off automatically
 - Turn night Light on or off
